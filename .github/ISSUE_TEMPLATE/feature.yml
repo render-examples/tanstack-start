@@ -1,0 +1,52 @@
+name: Focused improvement
+description: Propose a small change that improves first-deploy success or maintainability.
+title: "proposal: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        The default template stays intentionally small. Start with the user problem, not a package or feature list.
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: User problem
+      description: Who encounters the problem, and where in the clone, build, deploy, or maintenance journey does it occur?
+    validations:
+      required: true
+
+  - type: textarea
+    id: outcome
+    attributes:
+      label: Smallest useful outcome
+      description: Describe the observable improvement without prescribing unnecessary implementation detail.
+    validations:
+      required: true
+
+  - type: textarea
+    id: tradeoffs
+    attributes:
+      label: Scope and tradeoffs
+      description: What complexity, dependency, service, or maintenance burden would this add or remove?
+    validations:
+      required: true
+
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence or alternatives
+      description: Link primary documentation, a reproduction, or simpler alternatives considered.
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: principles
+    attributes:
+      label: Template fit
+      options:
+        - label: This improves the default path for most users rather than adding optional infrastructure.
+          required: true
+        - label: I described any build, deployment, security, accessibility, and maintenance impact above.
+          required: true
+        - label: I searched existing issues for the same proposal.
+          required: true

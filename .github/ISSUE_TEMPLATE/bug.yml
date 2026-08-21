@@ -1,0 +1,101 @@
+name: Bug report
+description: Report a reproducible problem with the app, deployment contract, or documentation.
+title: "bug: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping improve the template. Do not include credentials, private URLs, personal data, or sensitive security details in this report.
+
+  - type: dropdown
+    id: surface
+    attributes:
+      label: Affected surface
+      options:
+        - Local development
+        - Production build or start
+        - Render Blueprint or deployment
+        - Health route
+        - Browser or accessibility verification
+        - Documentation
+        - Other
+    validations:
+      required: true
+
+  - type: dropdown
+    id: template-state
+    attributes:
+      label: Template state
+      options:
+        - Fresh, unmodified template
+        - Modified downstream copy
+        - Unsure
+    validations:
+      required: true
+
+  - type: dropdown
+    id: production-smoke
+    attributes:
+      label: Production smoke result
+      description: Report the result of npm run smoke:production when it applies.
+      options:
+        - Passed
+        - Failed
+        - Not run or not applicable
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Reproduction
+      description: Give the smallest sequence that reproduces the problem. When relevant, say whether it also occurs from a clean checkout.
+      placeholder: |
+        1. Run ...
+        2. Open ...
+        3. Observe ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+      description: Include concise, redacted logs or screenshots when useful.
+    validations:
+      required: true
+
+  - type: input
+    id: commit
+    attributes:
+      label: Commit or version
+      placeholder: Commit SHA or release tag
+    validations:
+      required: true
+
+  - type: input
+    id: toolchain
+    attributes:
+      label: Toolchain and operating system
+      description: Include Node, npm, browser when relevant, and operating system versions. Enter N/A for a documentation-only report.
+      placeholder: Node 24.19.0, npm 11.17.0, Chromium 151, Ubuntu 24.04
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checks
+      options:
+        - label: I searched existing issues for the same problem.
+          required: true
+        - label: I removed secrets, private URLs, and personal data from this report.
+          required: true
+        - label: I reproduced this from a clean install using the repository's pinned toolchain, or explained why that does not apply.

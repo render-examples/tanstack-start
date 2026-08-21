@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Troubleshooting guide
+    url: https://github.com/render-examples/tanstack-start#troubleshooting
+    about: Check the documented build, port, free-tier, route, and browser fixes first.

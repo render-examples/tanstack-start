@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <title>TanStack Start on Render</title>
+  <rect x="5" y="5" width="54" height="54" rx="12" fill="#17191d" />
+  <path d="M13 13h35L13 48Z" fill="#6558d3" />
+  <path d="M51 51H20l31-31Z" fill="#5ce1a8" />
+  <rect x="5" y="5" width="54" height="54" rx="12" fill="none" stroke="#17191d" stroke-width="3" />
+</svg>

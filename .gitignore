@@ -1,0 +1,43 @@
+# Dependencies
+node_modules/
+
+# TanStack Start / Nitro / Vite output
+.output/
+.nitro/
+.tanstack/
+dist/
+dist-ssr/
+.vinxi/
+__unconfig*
+
+# Test and tool output
+coverage/
+playwright-report/
+test-results/
+.turbo/
+*.tsbuildinfo
+
+# Local environment (keep the documented example)
+.env
+.env.*
+!.env.example
+*.local
+
+# Deployment-tool state
+.vercel/
+.netlify/
+.wrangler/
+
+# Logs
+*.log
+npm-debug.log*
+pnpm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Editor and OS files
+.DS_Store
+.idea/
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
