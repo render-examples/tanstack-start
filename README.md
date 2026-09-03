@@ -1,6 +1,3 @@
-<p align="center">
-  <img src="public/favicon.svg" width="56" height="56" alt="TanStack Start on Render" />
-</p>
 
 <h1 align="center">TanStack Start on Render</h1>
 
